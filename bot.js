@@ -1,7 +1,6 @@
 const Discord = require('discord.js');//????? ???
 const client = new Discord.Client();// ????? ???????
-const ms = require('ms');
-const pms = require('pretty-ms');
+
 
 client.on('message', message => {
     var prefix = "&";
@@ -28,4 +27,6 @@ client.on('message', message => {
             return;
         }
     });
+
+
 client.login(process.env.BOT_TOKEN);
